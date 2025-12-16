@@ -1,3 +1,6 @@
+// Constants
+const PRECISION_MULTIPLIER = 1000000000;
+
 // Calculator state
 let currentValue = '0';
 let previousValue = '';
@@ -176,7 +179,7 @@ function handleEquals() {
     // Format result
     if (result !== undefined) {
         // Round to avoid floating point errors
-        result = Math.round(result * 1000000000) / 1000000000;
+        result = Math.round(result * PRECISION_MULTIPLIER) / PRECISION_MULTIPLIER;
         currentValue = result.toString();
     }
     

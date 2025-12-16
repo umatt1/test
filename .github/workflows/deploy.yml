@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - main
-      - copilot/setup-github-actions-calculator
   workflow_dispatch:
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
